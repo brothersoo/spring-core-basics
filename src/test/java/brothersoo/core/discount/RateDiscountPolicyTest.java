@@ -1,4 +1,4 @@
-package brothersoo.discount;
+package brothersoo.core.discount;
 
 import brothersoo.core.discount.DiscountPolicy;
 import brothersoo.core.discount.RateDiscountPolicy;
