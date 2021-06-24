@@ -4,5 +4,5 @@ import brothersoo.core.member.Member;
 
 public interface DiscountPolicy {
 
-  int getDiscountAmount(Member member);
+  int getDiscountAmount(Member member, int itemPrice);
 }
