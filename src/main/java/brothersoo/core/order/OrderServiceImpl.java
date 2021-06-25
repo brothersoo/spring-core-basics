@@ -1,10 +1,8 @@
 package brothersoo.core.order;
 
 import brothersoo.core.discount.DiscountPolicy;
-import brothersoo.core.discount.FixDiscountPolicy;
 import brothersoo.core.member.Member;
 import brothersoo.core.member.MemberRepository;
-import brothersoo.core.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService{
 
@@ -23,5 +21,9 @@ public class OrderServiceImpl implements OrderService{
     int discountAmount = discountPolicy.getDiscountAmount(member, 10000);
 
     return new Order(memberId, itemName, itemPrice, discountAmount);
+  }
+
+  public MemberRepository getMemberRepository() {
+    return memberRepository;
   }
 }
