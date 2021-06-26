@@ -1,6 +1,6 @@
 package brothersoo.core.member;
 
-import brothersoo.core.spring.AppConfig;
+import brothersoo.core.AppConfig;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

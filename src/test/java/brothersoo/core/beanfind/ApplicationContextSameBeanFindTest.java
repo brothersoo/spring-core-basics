@@ -5,9 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import brothersoo.core.member.MemberRepository;
 import brothersoo.core.member.MemoryMemberRepository;
-import brothersoo.core.spring.AppConfig;
 import java.util.Map;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;

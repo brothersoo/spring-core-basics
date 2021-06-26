@@ -1,6 +1,6 @@
 package brothersoo.core.beandefinition;
 
-import brothersoo.core.spring.AppConfig;
+import brothersoo.core.AppConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;

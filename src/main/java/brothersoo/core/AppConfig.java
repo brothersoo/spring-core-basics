@@ -1,4 +1,4 @@
-package brothersoo.core.spring;
+package brothersoo.core;
 
 import brothersoo.core.discount.DiscountPolicy;
 import brothersoo.core.discount.FixDiscountPolicy;

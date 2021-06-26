@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import brothersoo.core.member.MemberService;
 import brothersoo.core.member.MemberServiceImpl;
-import brothersoo.core.spring.AppConfig;
+import brothersoo.core.AppConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;

@@ -3,7 +3,7 @@ package brothersoo.core.order;
 import brothersoo.core.member.Grade;
 import brothersoo.core.member.Member;
 import brothersoo.core.member.MemberService;
-import brothersoo.core.spring.AppConfig;
+import brothersoo.core.AppConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
