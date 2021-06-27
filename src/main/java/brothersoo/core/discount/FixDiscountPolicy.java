@@ -2,7 +2,9 @@ package brothersoo.core.discount;
 
 import brothersoo.core.member.Grade;
 import brothersoo.core.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FixDiscountPolicy implements DiscountPolicy{
 
   private final static int fixedDiscountAmount = 1000;
