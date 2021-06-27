@@ -2,9 +2,11 @@ package brothersoo.core.discount;
 
 import brothersoo.core.member.Grade;
 import brothersoo.core.member.Member;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+@Qualifier("mainDiscountPolicy")
 public class FixDiscountPolicy implements DiscountPolicy{
 
   private final static int fixedDiscountAmount = 1000;
