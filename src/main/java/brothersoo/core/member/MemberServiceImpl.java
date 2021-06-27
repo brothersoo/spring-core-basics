@@ -1,15 +1,11 @@
 package brothersoo.core.member;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class MemberServiceImpl implements MemberService {
-
-  @Autowired
-  public MemberServiceImpl(MemberRepository memberRepository) {
-    this.memberRepository = memberRepository;
-  }
 
   private final MemberRepository memberRepository;
 
