@@ -1,5 +1,6 @@
 package brothersoo.core.order;
 
+import brothersoo.core.annotation.MainDiscountPolicy;
 import brothersoo.core.discount.DiscountPolicy;
 import brothersoo.core.member.Member;
 import brothersoo.core.member.MemberRepository;
@@ -11,7 +12,7 @@ public class OrderServiceImpl implements OrderService{
   private final MemberRepository memberRepository;
   private final DiscountPolicy discountPolicy;
 
-  public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+  public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
     this.memberRepository = memberRepository;
     this.discountPolicy = discountPolicy;
   }
