@@ -3,14 +3,12 @@ package brothersoo.core.lifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class NetworkClient {
+public class NetworkClient implements InitializingBean, DisposableBean{
 
   private String url;
 
   public NetworkClient() {
     System.out.printf("생성자 호출, url = %s\n", this.url);
-    connect();
-    call("초기화 연결 메세지");
   }
 
   void setUrl(String url) {
@@ -27,5 +25,16 @@ public class NetworkClient {
 
   void disconnect() {
     System.out.printf("disconnect: %s\n", url);
+  }
+
+  @Override
+  public void afterPropertiesSet() throws Exception {
+    connect();
+    call("초기화 연결 메세지");
+  }
+
+  @Override
+  public void destroy() throws Exception {
+    disconnect();
   }
 }
