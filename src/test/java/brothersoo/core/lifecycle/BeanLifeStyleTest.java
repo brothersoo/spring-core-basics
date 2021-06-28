@@ -21,7 +21,7 @@ class BeanLifeStyleTest {
   @Configuration
   static class LifeStyleConfig {
 
-    @Bean(initMethod = "init", destroyMethod = "close")
+    @Bean
     NetworkClient networkClient() {
       NetworkClient networkClient = new NetworkClient();
       networkClient.setUrl("brothersoo.github.io");
