@@ -1,13 +1,13 @@
-package brothersoo.core.spring;
+package brothersoo.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class CoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(CoreApplication.class, args);
 	}
 
 }
