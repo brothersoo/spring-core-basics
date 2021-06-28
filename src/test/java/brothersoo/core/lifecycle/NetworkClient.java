@@ -3,7 +3,7 @@ package brothersoo.core.lifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class NetworkClient implements InitializingBean, DisposableBean{
+public class NetworkClient {
 
   private String url;
 
@@ -27,14 +27,12 @@ public class NetworkClient implements InitializingBean, DisposableBean{
     System.out.printf("disconnect: %s\n", url);
   }
 
-  @Override
-  public void afterPropertiesSet() throws Exception {
+  public void init() throws Exception {
     connect();
     call("초기화 연결 메세지");
   }
 
-  @Override
-  public void destroy() throws Exception {
+  public void close() throws Exception {
     disconnect();
   }
 }
